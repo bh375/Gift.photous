@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Gift</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: relative;
+        }
+        /* बाकी तुम्हारा पूरा CSS वैसे का वैसा रखा है */
+
+        .light-effect {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0) 70%);
+            animation: lightmove 5s infinite linear;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+        @keyframes lightmove {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+        /* यहाँ audio टैग को invisible कर दिया */
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="light-effect"></div>
+
+<div class="developer">Developed by Bhupendra</div>
+
+<div class="emoji">❤️‍🔥🥰❤️💌‍</div>
+
+<h1>खास आपके लिए भूपेंद्र ने भेजा है</h1>
+<h2>From: BHUPENDRA PRAJAPATI</h2>
+
+<div class="image-container">
+    <img src="1742921113363.jpg" alt="Special Image" class="main-image">
+</div>
+
+<div class="small-images">
+    <img src="1742921113363.jpg" alt="Small Image 1" class="small-image">
+    <img src="1742921113363.jpg" alt="Small Image 2" class="small-image">
+</div>
+
+<audio autoplay loop>
+    <source src="28-Mere%20Rashke%20Qamar.mp3" type="audio/mpeg">
+    आपका ब्राउज़र audio tag सपोर्ट नहीं करता.
+</audio>
+
+<div class="emoji">🥰❤️‍❤️‍🔥💌‍</div>
+
+</body>
+</html>
