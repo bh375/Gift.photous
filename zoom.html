@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Special Gift</title>
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 35px;
+            color: #FF00FF;
+            text-shadow: 2px 2px 5px white;
+            animation: blink 1.5s infinite;
+        }
+        h2 {
+            margin-top: 10px;
+            font-size: 22px;
+            color: #00FFFF;
+            text-shadow: 1px 1px 3px white;
+        }
+        img {
+            margin-top: 30px;
+            width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px #fff;
+            animation: pulse 2s infinite;
+        }
+        audio {
+            margin-top: 30px;
+        }
+        @keyframes blink {
+            0%, 50%, 100% { opacity: 1; }
+            25%, 75% { opacity: 0.3; }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body onload="love you dear()">
+
+    <h1>Special Gift for You</h1>
+    <h2>From: BHUPENDRA PRAJAPATI</h2>
+
+    <!-- Photo -->
+    <img src="1742921113363_gift.jpg" alt="Gift Image">
+
+    <!-- Audio Player -->
+    <br><br>
+    <audio controls autoplay loop>
+          <source src="https://drive.google.com/uc?export=download&id=1bnmuhCDPfCaAlZC-cBF6ge2xBalcpnGv" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function showMessage() {
+            setTimeout(function() {
+                alert("Hope you like this Special Gift!");
+            }, 1000); // 1 second ke baad message aayega
+        }
+    </script>
+
+</body>
+</html>
