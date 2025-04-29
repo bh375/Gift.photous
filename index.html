@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Gift</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .light-effect {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0) 70%);
+            animation: lightmove 5s infinite linear;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes lightmove {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+
+        audio {
+            display: none;
+        }
+
+        /* Dancing Couple Section CSS */
+        .dancing-section {
+            position: relative;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .dancing-couple {
+            width: 250px;
+            max-width: 90%;
+            animation: danceMove 3s infinite alternate;
+            position: relative;
+            z-index: 2;
+            filter: drop-shadow(0 0 15px red);
+        }
+
+        @keyframes danceMove {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(-2deg); }
+            100% { transform: translateY(0px) rotate(2deg); }
+        }
+
+        .lighting-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, purple);
+            background-size: 600% 600%;
+            animation: lightEffect 12s ease infinite;
+            opacity: 0.25;
+            z-index: 1;
+            mix-blend-mode: screen;
+        }
+
+        @keyframes lightEffect {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="light-effect"></div>
+
+<div class="developer">Developed by Bhupendra</div>
+
+<div class="emoji">❤️‍🔥🥰❤️💌‍</div>
+
+<h1>खास आपके लिए भूपेंद्र ने भेजा है</h1>
+<h2>From: BHUPENDRA PRAJAPATI</h2>
+
+<div class="image-container">
+    <img src="1742921113363.jpg" alt="Special Image" class="main-image">
+</div>
+
+<!-- Dancing Couple Section Start -->
+<div class="dancing-section">
+    <img src="couple-dancing.gif" alt="Dancing Couple" class="dancing-couple">
+    <div class="lighting-background"></div>
+</div>
+<!-- Dancing Couple Section End -->
+
+<div class="small-images">
+    <img src="1742921113363.jpg" alt="Small Image 1" class="small-image">
+    <img src="1742921113363.jpg" alt="Small Image 2" class="small-image">
+</div>
+
+<audio autoplay loop>
+    <source src="28-Mere%20Rashke%20Qamar.mp3" type="audio/mpeg">
+    आपका ब्राउज़र audio tag सपोर्ट नहीं करता.
+</audio>
+
+<div class="emoji">🥰❤️‍❤️‍🔥💌‍</div>
+
+</body>
+</html>
